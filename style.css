@@ -1,0 +1,174 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TTLakes-Medium", sans-serif;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.brands {
+    margin: 0;
+    padding: 0;
+}
+
+.brands__title {
+    color: #7E7E82;
+    font-size: 16px;
+    font-weight: normal;
+    box-shadow: inset 0 4px 1px 0 #D9FFF5;
+    margin: 0;
+    height: 80px;
+    padding: 16px 15px;
+    background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
+}
+
+.brands-container {
+    height: 120px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.brand-list {
+    background-color: inherit;
+    height: 120px;
+    margin: 0;
+    padding-left: 15px;
+}
+.brand-list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 72px;
+    min-width: 240px;
+    margin-right: 15px;
+    padding: 0 10px;
+
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    background-color: white;
+}
+.brand-list__go-icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #FFFFFF url("images/icons/go.svg") no-repeat;
+}
+.brands-container .swiper-slide {
+    width: 80%;
+}
+.brands-container .swiper-pagination {
+    position: absolute;
+    top: 190px;
+}
+.brands-container .swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+}
+
+.brands__button {
+    display: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+
+    border: none;
+    margin-left: 15px;
+    height: 25px;
+}
+.brands__button--open {
+    background: #F8F8F8 url("images/icons/more.svg") no-repeat left;
+    width: 120px;
+}
+.brands__button--close {
+    background: #F8F8F8 url("images/icons/expand.svg") no-repeat left;
+    width: 100px;
+}
+
+@media (min-width: 768px) {
+    .brands__title {
+        height: 56px;
+        padding-left: 20px;
+    }
+
+    .brands-container.swiper-container {
+        margin: 0;
+        padding: 0;
+        height: 190px;
+    }
+    .brand-list, .brands-container .swiper-wrapper {
+        height: 190px;
+        overflow: hidden;
+        padding-left: 20px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .swiper-wrapper .swiper-slide {
+        width: 30.5%;
+        max-width: 240px;
+        min-width: 220px;
+
+        margin-right: 20px;
+        margin-top: 20px;
+        height: 72px;
+
+        flex-shrink: 0;
+    }
+    .brand-list__item {
+        margin: 0;
+        width: 100%;
+        min-width: 220px;
+        max-width: 240px;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+
+    .brands__button {
+        margin-top: 15px;
+        margin-left: 25px;
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+    .brands__title {
+        padding-left: 30px;
+    }
+
+    .brand-list {
+        padding-left: 30px;
+    }
+    .brands-container .swiper-slide {
+        margin-right: 30px;
+    }
+
+    .brands__button {
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+}
+
+.brands .brand-list--opened {
+    height: max-content;
+}
+
+.brands .brands-container--opened {
+    height: max-content;
+}
