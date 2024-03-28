@@ -1,11 +1,9 @@
 html {
     box-sizing: border-box;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     font-family: "TTLakes-Medium", sans-serif;
     background-color: #F8F8F8;
@@ -18,6 +16,7 @@ body {
 .brands {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .brands__title {
@@ -36,7 +35,6 @@ body {
     margin: 0;
     padding-top: 20px;
 }
-
 .brand-list {
     background-color: inherit;
     height: 120px;
@@ -81,7 +79,7 @@ body {
     display: none;
     font-family: inherit;
     font-weight: bold;
-    font-size: 14px;
+    font-size: inherit;
 
     border: none;
     margin-left: 15px;

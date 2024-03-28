@@ -19,8 +19,6 @@ brandsButton.addEventListener('click',  () => {
     }
 })
 
-
-
 if (clientWidth < 768) {
     new Swiper('.brands-container', {
         pagination: {
@@ -30,5 +28,4 @@ if (clientWidth < 768) {
         slidesPerView: 'auto',
         spaceBetween: 20,
     });
-
 }
